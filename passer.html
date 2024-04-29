@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau des produits</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Tableau des produits</h1>
+    <form action="process_order.php" method="post">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Sélectionner</th>
+                    <th scope="col">Nom du produit</th>
+                    <th scope="col">Quantité (en litres)</th>
+                    <th scope="col">Prix unitaire</th>
+                    <th scope="col">Prix total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="product[]" value="detergent"></td>
+                    <td> multi-usages</td>
+                    <td><input type="number" name="quantity[]" min="0" step="0.5" placeholder="Entrez la quantité en litres" class="form-control" required></td>
+                    <td>0</td>
+                    <td>00</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="product[]" value="disinfectant"></td>
+                    <td>Liquide Vaisselle Citron</td>
+                    <td><input type="number" name="quantity[]" min="0" step="0.5" placeholder="Entrez la quantité en litres" class="form-control" required></td>
+                    <td>00</td>
+                    <td>00</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="product[]" value="disinfectant"></td>
+                    <td>Liquide Vaisselle Fraise</td>
+                    <td><input type="number" name="quantity[]" min="0" step="0.5" placeholder="Entrez la quantité en litres" class="form-control" required></td>
+                    <td>00</td>
+                    <td>00</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="product[]" value="disinfectant"></td>
+                    <td>Liquide Vaisselle Pomme</td>
+                    <td><input type="number" name="quantity[]" min="0" step="0.5" placeholder="Entrez la quantité en litres" class="form-control" required></td>
+                    <td>00</td>
+                    <td>00</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="product[]" value="disinfectant"></td>
+                    <td>Liquide Vaisselle Extra  Citron</td>
+                    <td><input type="number" name="quantity[]" min="0" step="0.5" placeholder="Entrez la quantité en litres" class="form-control" required></td>
+                    <td>00</td>
+                    <td>00</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="product[]" value="disinfectant"></td>
+                    <td>Liquide Vaisselle Extra Pomme</td>
+                    <td><input type="number" name="quantity[]" min="0" step="0.5" placeholder="Entrez la quantité en litres" class="form-control" required></td>
+                    <td>00</td>
+                    <td>00</td>
+                </tr>
+                <!-- Ajoutez d'autres lignes pour plus de produits ici -->
+            </tbody>
+        </table>
+        <button type="submit" class="btn btn-primary">Passer la commande</button>
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
